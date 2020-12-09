@@ -1,0 +1,25 @@
+{
+  "name": "github-repo-count-nodejs-redis-example",
+  "version": "0.0.1",
+  "description": "Redis usage example to fetch number of github repositories",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redis",
+    "nodejs",
+    "example",
+    "github"
+  ],
+  "author": "adrphlhome",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "redis": "^3.0.2",
+    "response-time": "^2.3.2"
+  }
+}

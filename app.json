@@ -1,0 +1,7 @@
+{
+  "name": "Redis Cache Example",
+  "description": "Fetching number of github repos using NodeJS and Redis",
+  "repository": "https://github.com/",
+  "logo": "https://redis.io/images/redis-white.png",
+  "keywords": ["node", "express", "redis"]
+}
