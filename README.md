@@ -10,3 +10,6 @@ Show how the redis works with NodeJS, Express.
 
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FITsolution-git%2Fnode-express-redis%2Fmaster%2Fazuredeploy.json)
+
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/ITsolution-git/2Fnode-express-redis)
