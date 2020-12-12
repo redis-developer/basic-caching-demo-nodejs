@@ -1,11 +1,9 @@
-
-
 <template>
   <div class="input-group search-input mt-3">
     <input
       type="text"
       v-model="username"
-      placeholder="Type username"
+      placeholder="Github username"
       @keydown.enter="search"
       class="form-control py-2 border-right-0 border"
     />
