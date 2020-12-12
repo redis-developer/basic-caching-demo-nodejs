@@ -16,7 +16,7 @@ const client = redis.createClient(process.env.REDIS_ENDPOINT_URI, {
 const app = express();
 
 // Set response
-function setResponse(username, repos, cached) {
+function composeResponse(username, repos, cached) {
   return {
     username,
     repos,
@@ -27,8 +27,6 @@ function setResponse(username, repos, cached) {
 // Make request to Github for data
 async function getRepos(req, res, next) {
   try {
-    console.log('Fetching Data...');
-
     const { username } = req.params;
 
     const response = await fetch(`https://api.github.com/users/${username}`);
@@ -38,9 +36,8 @@ async function getRepos(req, res, next) {
     const repos = data.public_repos;
 
     if (!isNaN(repos)) {
-      // Set data to Redis
       client.setex(username, 3600, repos);
-      res.json(setResponse(username, repos, false));
+      res.json(composeResponse(username, repos, false));
     } else {
       res.status(404);
     }
@@ -57,22 +54,21 @@ app.use(cors({
   exposedHeaders: ['X-Response-Time'],
 }));
 
-// Cache middleware
-function cache(req, res, next) {
+function cacheMiddleware(req, res, next) {
   const { username } = req.params;
 
   client.get(username, (err, data) => {
     if (err) throw err;
 
     if (data !== null) {
-      res.json(setResponse(username, data, true));
+      res.json(composeResponse(username, data, true));
     } else {
       next();
     }
   });
 }
 
-app.get('/repos/:username', cache, getRepos);
+app.get('/repos/:username', cacheMiddleware, getRepos);
 
 
 app.listen(PORT, () => {
