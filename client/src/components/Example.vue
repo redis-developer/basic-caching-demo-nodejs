@@ -95,7 +95,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -113,10 +113,11 @@ export default {
 
 .how-it-works .how-it-works__header {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .how-it-works .how-it-works__content {
-  font-size: 10px;
+  font-size: 20px;
+  text-align: left;
 }
 </style>
