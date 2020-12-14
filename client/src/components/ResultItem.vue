@@ -9,7 +9,7 @@
           color: !result.cached ? '#c72b40' : '#29967c'
         }"
       >
-        Took {{ result.responseTime }} (Cache {{ result.cached ? 'hit' : 'missed' }})
+        Took {{ result.responseTime }} (Cache {{ result.cached ? 'hit' : 'missed' }}{{ timesLiteral }})
       </span>
       <a
         href="#"
@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import { calcTimes } from '@/storage'
+
 export default {
   name: 'ResultItem',
 
@@ -34,6 +36,17 @@ export default {
       required: true,
     },
   },
+
+  computed: {
+    timesLiteral () {
+      if (this.result.cached) {
+        const str = calcTimes(this.result.username, this.result.responseTime)
+        return str ? `, ${str}X faster` : ''
+      } else {
+        return ''
+      }
+    },
+  }
 }
 </script>
 

@@ -36,6 +36,7 @@ import SearchInput from './SearchInput.vue'
 import ResultItem from './ResultItem.vue'
 import History from './History.vue'
 import Panel from './Panel.vue'
+import { storeLastNonCached } from '@/storage'
 
 const API_BASE = location.hostname === 'localhost'
   ? 'http://localhost:5000'
@@ -77,11 +78,17 @@ export default {
         const apiResp = await axios.get(`${API_BASE}/repos/${username}`)
         const responseTime = apiResp.headers['x-response-time']
         const data = apiResp.data
+
+        if (!data.cached) {
+          storeLastNonCached(data.username, responseTime)
+        }
+
         return {
           responseTime,
           ...data,
         }
       } catch (err) {
+        console.log(err)
         // catch err
       }
     },
