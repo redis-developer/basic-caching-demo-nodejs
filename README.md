@@ -18,7 +18,7 @@ Show how the redis works with NodeJS, Express.
 </p>
 
 <p>
-    <a href="https://vercel.com/new/project?template=https://github.com/ITsolution-git/node-express-redis/tree/master" target="_blank">
+    <a href="https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FITsolution-git%2Fnode-express-redis&env=REDIS_ENDPOINT_URI,REDIS_PASSWORD&envDescription=REDIS_ENDPOINT_URI%20is%20required%20at%20least%20to%20connect%20to%20Redis%20clouding%20server" target="_blank">
         <img src="https://vercel.com/button" alt="Deploy with Vercel" width="200px" height="50px"/>
     </a>
 </p>

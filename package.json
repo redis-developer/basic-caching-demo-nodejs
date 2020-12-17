@@ -22,5 +22,8 @@
     "node-fetch": "^2.6.1",
     "redis": "^3.0.2",
     "response-time": "^2.3.2"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

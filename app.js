@@ -7,7 +7,6 @@ const cors = require('cors');
 const path = require('path');
 
 const PORT = process.env.PORT || 5000;
-const REDIS_PORT = process.env.PORT || 6379;
 
 const client = redis.createClient(process.env.REDIS_ENDPOINT_URI, {
   password: process.env.REDIS_PASSWORD,
