@@ -11,7 +11,7 @@
     },
     "REDIS_PASSWORD": {
 	    "description": "Password to your Redis server",
-	    "required": false
+	    "required": true
     }
   }
 }
