@@ -74,3 +74,5 @@ app.get('/repos/:username', cacheMiddleware, getRepos);
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
 });
+
+module.exports = app
