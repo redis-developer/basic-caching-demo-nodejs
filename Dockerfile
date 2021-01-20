@@ -9,4 +9,4 @@ RUN yarn
 COPY . .
 
 EXPOSE PORT
-CMD [ "node", "app.js" ]
+CMD [ "node", "api/index.js" ]

@@ -47,7 +47,7 @@ async function getRepos(req, res, next) {
   }
 }
 
-app.use('/', express.static(path.join(__dirname, 'client/dist')));
+app.use('/', express.static(path.join(__dirname, '../public')));
 app.use(responseTime());
 app.use(cors({
   exposedHeaders: ['X-Response-Time'],
@@ -67,7 +67,7 @@ function cacheMiddleware(req, res, next) {
   });
 }
 
-app.get('/repos/:username', cacheMiddleware, getRepos);
+app.get('/api/repos/:username', cacheMiddleware, getRepos);
 
 
 app.listen(PORT, () => {

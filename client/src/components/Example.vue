@@ -39,8 +39,8 @@ import Panel from './Panel.vue'
 import { storeLastNonCached } from '@/storage'
 
 const API_BASE = location.hostname === 'localhost'
-  ? 'http://localhost:5000'
-  : location.origin
+  ? 'http://localhost:5000/api'
+  : location.origin + '/api'
 
 export default {
   name: 'Example',
