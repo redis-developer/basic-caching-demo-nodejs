@@ -62,6 +62,19 @@ Problem with unsupported flags when deploying google cloud run button
 
 ![How it works](docs/screenshot001.png)
 
+
+# How it works?
+
+<ol>
+    <li>How to set key with timeout (1 hr):
+      <pre>SETEX microsoft 3600 100</pre>
+     </li>
+    <li>How to get the value of the kye. 
+      <pre>GET microsoft</pre>
+    </li>
+</ol>
+
+
 ## How to run it locally?
 
 #### Copy `.env.sample` to create `.env`. And provide the values for environment variables
