@@ -39,6 +39,22 @@ This app returns the number of repositories a Github account has. When you first
 
 ![How it works](docs/screenshot001.png)
 
+
+### 1. How the data is stored:
+```
+SETEX microsoft 3600 1000
+```
+
+### 2. How the data is accessed:
+```
+GET microsoft
+```
+
+## 2. How the data is accessed:
+<ol>
+    <li>Top 10 companies: <pre>ZREVRANGE companyLeaderboard 0 9 WITHSCORES</pre> </li>
+    <li>All companies: <pre>ZREVRANGE co
+
 ## How to run it locally?
 
 #### Copy `.env.sample` to create `.env`. And provide the values for environment variables
