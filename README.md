@@ -50,11 +50,6 @@ SETEX microsoft 3600 1000
 GET microsoft
 ```
 
-## 2. How the data is accessed:
-<ol>
-    <li>Top 10 companies: <pre>ZREVRANGE companyLeaderboard 0 9 WITHSCORES</pre> </li>
-    <li>All companies: <pre>ZREVRANGE co
-
 ## How to run it locally?
 
 #### Copy `.env.sample` to create `.env`. And provide the values for environment variables
