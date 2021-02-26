@@ -61,13 +61,13 @@ GET microsoft
 
 ```sh
 cd client
-yarn install
-npm run serve
+yarn
+yarn serve
 ```
 
 #### Run backend
 
 ``` sh
-yarn install
-npm start
+yarn
+yarn start
 ```
