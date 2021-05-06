@@ -25,7 +25,7 @@
     "app_image_urls": [
         "https://github.com/redis-developer/basic-caching-demo-nodejs/blob/main/docs/screenshot001.png?raw=true"
     ],
-    "youtube_url": "",
+    "youtube_url": "https://youtube.com/watch?v=Ov18gLo0Da8",
     "special_tags": [],
     "verticals": ["Healthcare", "Financial"],
     "markdown": "https://raw.githubusercontent.com/redislabs-training/redis-sitesearch/master/README.md"
