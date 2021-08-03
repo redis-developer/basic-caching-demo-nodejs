@@ -4,7 +4,7 @@
     "type": "Building Block",
     "contributed_by": "Redis Labs",
     "repo_url": "https://github.com/redis-developer/basic-caching-demo-nodejs",
-    "preview_image_url": "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/master/images/app_preview_image.png",
+    "preview_image_url": "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/main/images/app_preview_image.png",
     "download_url": "https://github.com/redis-developer/basic-caching-demo-nodejs/archive/main.zip",
     "hosted_url": "",
     "quick_deploy": "true",
@@ -24,10 +24,10 @@
     "redis_features": ["caching"],
     "redis_modules": [],
     "app_image_urls": [
-        "https://github.com/redis-developer/basic-caching-demo-nodejs/blob/main/docs/screenshot001.png?raw=true"
+        "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/blob/main/docs/screenshot001.png?raw=true"
     ],
     "youtube_url": "https://youtube.com/watch?v=Ov18gLo0Da8",
     "special_tags": [],
     "verticals": ["Healthcare", "Financial"],
-    "markdown": "https://github.com/redis-developer/basic-caching-demo-nodejs/raw/main/README.md"
+    "markdown": "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/raw/main/README.md"
 }
