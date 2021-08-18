@@ -21,13 +21,13 @@
     ],
     "language": ["JavaScript"],
     "redis_commands": ["SETEX"],
-    "redis_features": ["caching"],
+    "redis_features": ["Caching"],
     "redis_modules": [],
     "app_image_urls": [
         "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/blob/main/docs/screenshot001.png?raw=true"
     ],
     "youtube_url": "https://youtube.com/watch?v=Ov18gLo0Da8",
     "special_tags": [],
-    "verticals": ["Healthcare", "Financial"],
+    "verticals": ["Others"],
     "markdown": "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/raw/main/README.md"
 }
