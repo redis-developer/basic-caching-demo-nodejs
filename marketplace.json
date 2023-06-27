@@ -2,7 +2,7 @@
     "app_name": "Basic Redis caching example in Nodejs",
     "description": "Showcases how to impliment caching in NodeJS",
     "type": "Building Block",
-    "contributed_by": "Redis Labs",
+    "contributed_by": "Redis",
     "repo_url": "https://github.com/redis-developer/basic-caching-demo-nodejs",
     "preview_image_url": "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/main/images/app_preview_image.png",
     "download_url": "https://github.com/redis-developer/basic-caching-demo-nodejs/archive/main.zip",
@@ -19,15 +19,23 @@
             "Google": "https://deploy.cloud.run/?git_repo=https://github.com/redis-developer/basic-caching-demo-nodejs.git"
         }
     ],
-    "language": ["JavaScript"],
-    "redis_commands": ["SETEX"],
-    "redis_features": ["Caching"],
-    "redis_modules": [],
+    "language": [
+        "JavaScript"
+    ],
+    "redis_commands": [
+        "SETEX"
+    ],
+    "redis_use_cases": [
+        "Caching"
+    ],
+    "redis_features": [],
     "app_image_urls": [
         "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/main/docs/screenshot001.png"
     ],
     "youtube_url": "https://youtube.com/watch?v=Ov18gLo0Da8",
     "special_tags": [],
-    "verticals": ["Others"],
+    "verticals": [
+        "Others"
+    ],
     "markdown": "https://raw.githubusercontent.com/redis-developer/basic-caching-demo-nodejs/main/README.md"
 }
